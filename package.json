@@ -1,0 +1,29 @@
+{
+  "name": "choo-dapp-preference",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "export NODE_ENV=production && bankai build index.js",
+    "deploy": "npx now -e NODE_ENV=\"production\" --public",
+    "dev": "bankai start index.js",
+    "create": "choo-scaffold",
+    "inspect": "bankai inspect index.js",
+    "start": "serve ./dist --single",
+    "test": "standard && npm run test-deps",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
+  },
+  "dependencies": {
+    "choo": "^6.8.0",
+    "choo-devtools": "^2.3.4",
+    "choo-service-worker": "^2.4.0",
+    "serve": "^6.5.1",
+    "sheetify": "^7.3.0",
+    "tachyons": "^4.9.1"
+  },
+  "devDependencies": {
+    "bankai": "^9.10.4",
+    "choo-scaffold": "^1.1.2",
+    "dependency-check": "^3.0.0",
+    "standard": "^11.0.0"
+  }
+}
