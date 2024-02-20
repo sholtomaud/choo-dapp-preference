@@ -25,7 +25,7 @@
     "localforage": "^1.7.1",
     "nanocomponent": "^6.5.1",
     "route-tree": "^3.0.0",
-    "serve": "^6.5.1",
+    "serve": "^14.2.1",
     "sheetify": "^7.3.0",
     "skylinkjs": "^0.6.30",
     "svg-icon-component": "^1.0.2",
